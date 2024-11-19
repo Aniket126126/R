@@ -1,0 +1,30 @@
+---
+title: "ggplot_hook"
+author: "Aniket"
+date: "2024-11-19"
+output: html_document
+---
+
+##Setting Up Environment
+Notes: Starting up R environment by loading required Packages
+```{r Loading Packages, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+
+##First Visualization of the dataset
+```{r ggplot for penguin data visualization, warning=FALSE}
+
+ggplot(data = penguins) +
+
+  geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))
+
+```
+
+```{r}
+
+```
+
+
+
